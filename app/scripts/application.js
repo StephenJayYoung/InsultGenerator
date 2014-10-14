@@ -4,7 +4,7 @@ var InsultGenerator = window.InsultGenerator = Ember.Application.create();
 
 InsultGenerator.Router.map(function() {
 	this.route('compliment')
-  this.route('insult')
+  this.route('insults')
 });
 
 InsultGenerator.IndexRoute = Ember.Route.extend({
@@ -14,5 +14,5 @@ InsultGenerator.IndexRoute = Ember.Route.extend({
 });
 
 
-var insults = require('./insults');
+var insults = require('./listOfInsults');
 console.log(insults);
