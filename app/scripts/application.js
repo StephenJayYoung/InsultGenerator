@@ -3,7 +3,8 @@
 var InsultGenerator = window.InsultGenerator = Ember.Application.create();
 
 InsultGenerator.Router.map(function() {
-  // put your routes here
+	this.route('compliment')
+  this.route('insult')
 });
 
 InsultGenerator.IndexRoute = Ember.Route.extend({
