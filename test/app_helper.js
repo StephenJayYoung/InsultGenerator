@@ -18,6 +18,9 @@ Ember.Application.reopen({
   }
 });
 
+Ember.Test.registerHelper('applicationContainer', function(app) {
+  return app.__container__;
+});
 
 // expose fixtures property (stored in __html__ via karma preprocessor)
 window.__fixture = function(name) {

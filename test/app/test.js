@@ -25,3 +25,10 @@ describe('app', function() {
 		// expect(find('.compliment').length).to.eql(1);
   // });
 });
+
+describe('InsultController', function() {
+  it('has a method', function() {
+    var controller = applicationContainer().lookup('controller:insult');
+    expect(controller.thing()).to.eql('thing');
+  });
+});
