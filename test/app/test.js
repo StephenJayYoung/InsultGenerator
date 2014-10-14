@@ -10,6 +10,6 @@ describe('app', function() {
   	// find() is like $()
   	// the argument to find is a CSS selector
     visit('/insult');
-  	expect(find('span.insult').length).to.eql(1);
+  	expect(find('.insult').length).to.eql(1);
   });
 });

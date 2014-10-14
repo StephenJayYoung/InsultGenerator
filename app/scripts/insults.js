@@ -1,3 +1,3 @@
 module.exports = [
-  'Your mom'
+  'Your mom', 'Your face'
 ];
