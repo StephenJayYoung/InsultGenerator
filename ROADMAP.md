@@ -9,14 +9,16 @@
 
 ##TASKS
 1. Write tests. Whit is our friend...
-1. Make user input
-1. Make buttons
+1. Make user input X
+1. Make buttons X
 1. Create compliments and insults (each person writes 5 of each)
 1. Write App
-	a. create routes
-	b. create randomizer
+	a. create routes (built off of the "compliment me", and "insult me", buttons)
+	b. create randomizer function
 	c. create algorithm to pull the compliment/insult
 	d. add name to insult via route?
+1. Write a test for randomize
+1. Write a test for clear. 
 
 ##QUESTIONS
 Where do we put insults? json file?
