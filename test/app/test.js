@@ -12,18 +12,20 @@ describe('app', function() {
     visit('/insult');
   	expect(find('.insult').length).to.eql(1);
   });
-  it('routes to a compliment', function() {
+
+  it.skip('routes to a compliment', function() {
 		// find() is like $()
 		// the argument to find is a CSS selector
 	  visit('/compliment');
 		expect(find('.compliment').length).to.eql(1);
   });
-   it('randomly generates a compliment or insult', function() {
+
+  it('randomly generates a compliment or insult', function() {
 		// // find() is like $()
 		// // the argument to find is a CSS selector
-	 //  visit('/compliment');
+	  // visit('/compliment');
 		// expect(find('.compliment').length).to.eql(1);
-  // });
+  });
 });
 
 describe('InsultController', function() {
