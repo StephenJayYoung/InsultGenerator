@@ -26,6 +26,9 @@ Create tests? Q unit?
 What for front end? Bootstrap?
 Ask classmates and friends on FB for more insults and compliments so we can get points for mountain?
 
+Test:
+1. Make a test that shows us that our generator gives us a random insult. 
+
 ##EXTRAS
 Should we make it so that the user can input name?
 Let's add hosting!
