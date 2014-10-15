@@ -14,3 +14,6 @@ InsultGenerator.IndexRoute = Ember.Route.extend({
 });
 
 require('./insult_controller')(InsultGenerator);
+
+
+require('./compliment_controller')(ComplimentGenerator);
