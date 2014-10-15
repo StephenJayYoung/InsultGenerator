@@ -9,7 +9,7 @@ module.exports = function(InsultGenerator) {
     thing: function() {
       return 'You are supah dupah';
     },
-    newInsult: function () {
+    newCompliment: function () {
     	return 'You are supah dupah';
 			}
 			.property()

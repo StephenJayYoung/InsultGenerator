@@ -11,25 +11,28 @@ describe('app', function() {
     });
   });
 
-  it.skip('routes to an insult', function() {
-  	// find() is like $()
-  	// the argument to find is a CSS selector
+  it('has index stuff', function() {
+    visit('/');
+    fillIn('input#name', 'Kali');
+    click('a.insult');
+    andThen(function() {
+      expect(currentRouteName()).to.eql('insult');
+      expect(find('span.insult').text()).to.match(/tus zapatos/);
+    });
+  });
+
+  it('routes to an insult', function() {
     visit('/insult');
-  	expect(find('.insult').length).to.eql(1);
+  	expect(find('span.insult').length).to.eql(1);
   });
 
   it('routes to a compliment', function() {
-		// find() is like $()
-		// the argument to find is a CSS selector
 	  visit('/compliment');
-		expect(find('.compliment').length).to.eql(1);
+		expect(find('span.compliment').length).to.eql(1);
   });
 
   it.skip('randomly generates a compliment or insult', function() {
-		// // find() is like $()
-		// // the argument to find is a CSS selector
-	  // visit('/compliment');
-		// expect(find('.compliment').length).to.eql(1);
+  	
   });
 });
 
