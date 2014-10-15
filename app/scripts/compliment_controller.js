@@ -1,16 +1,16 @@
 'use strict';
 
 module.exports = function(InsultGenerator) {
-  var insults = [
+  var compliments = [
     'You are supah dupah', 'You are beautiful'
   ];
 
-  InsultGenerator.InsultController = Ember.ObjectController.extend({
+  InsultGenerator.ComplimentController = Ember.ObjectController.extend({
     thing: function() {
-      return 'You are supah dupah'
+      return 'You are supah dupah';
     },
     newInsult: function () {
-    	return "You are supah dupah";
+    	return 'You are supah dupah';
 			}
 			.property()
   });
