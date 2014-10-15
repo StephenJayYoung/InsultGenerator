@@ -34,3 +34,10 @@ describe('InsultController', function() {
     expect(controller.thing()).to.eql('suck it');
   });
 });
+
+describe('InsultGenerator', function() {
+  it('generates a random insult', function() {
+
+    expect(()).to.eql('suck it');
+  });
+});
