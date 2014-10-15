@@ -7,8 +7,12 @@ module.exports = function(InsultGenerator) {
 
   InsultGenerator.InsultController = Ember.ObjectController.extend({
     thing: function() {
-      return 'thing';
-    }
+      return 'suck it';
+    },
+    newInsult: function () {
+    	return "tus zapatos hueles muy malos";
+			}
+			.property()
   });
 };
 

@@ -31,6 +31,6 @@ describe('app', function() {
 describe('InsultController', function() {
   it('has a method', function() {
     var controller = applicationContainer().lookup('controller:insult');
-    expect(controller.thing()).to.eql('thing');
+    expect(controller.thing()).to.eql('suck it');
   });
 });
