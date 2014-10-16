@@ -31,12 +31,20 @@ describe('app', function() {
 		expect(find('span.compliment').length).to.eql(1);
   });
 
-  it.skip('randomly generates a compliment or insult', function() {
+  it.skip('randomly generates an insult', function() {
   	// when you run random insult function, it takes
     // an array and gives you back one insult
     // which is a string
-    var arrayOfInsults = ['stinky monkey','bad speller'];
-    expect(result.length).to.eql(1);
+    visit('/something-that-is-a-real-path');
+    click('a.insult');
+    andThen(function() {
+      expect(currentRouteName()).to.eql('insult');
+      // var arrayOfInsults = ['stinky monkey','bad speller'];
+      // var randomInsult = arrayOfInsults.math.floor
+      var text = find('css-selector-for-whever-the-insult-goes').text();
+      var possibilities = ['insult one', 'insult two']; // TODO: make this any possible insult
+      expect(possibilities.indexOf(text)).to.not.eql(-1);
+    });
   });
 });
 
